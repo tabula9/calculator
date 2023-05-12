@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="main.css">
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+  <!-- ここに記述していきましょう！ -->
+  
+  <div class="container">
+    <div class="result-display">
+      <p id="symbol"></p>
+      <p id="result">0</p>
+    </div>
+    
+    <table>
+      <tr>
+        <td onclick=eventA(this)>7</td>
+        <td onclick=eventA(this)>8</td>
+        <td onclick=eventA(this)>9</td>
+        <td onclick=eventD();>+</td>
+      </tr>
+      
+      <tr>
+        <td onclick=eventA(this)>4</td>
+        <td onclick=eventA(this)>5</td>
+        <td onclick=eventA(this)>6</td>
+        <td onclick=eventE();>-</td>
+      </tr>
+      
+      <tr>
+        <td onclick=eventA(this)>1</td>
+        <td onclick=eventA(this)>2</td>
+        <td onclick=eventA(this)>3</td>
+        <td onclick=eventF();>*</td>
+      </tr>
+      
+      <tr>
+        <td onclick=eventA(this)>0</td>
+        <td onclick=eventB();>00</td>
+        <td onclick=eventC();>.</td>
+        <td onclick=eventG();>/</td>
+      </tr>
+      
+      <tr>
+        <td onclick=eventZ();>AC</td>
+        <td onclick=eventQ();>=</td>
+      </tr>
+    </table>
+    
+  </div>
+ 
+ <script src="main.js"></script>
+ </body>
+ </html>
